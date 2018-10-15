@@ -12,6 +12,10 @@
 		1DA591202174C18400288E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA5911E2174C18400288E9E /* Main.storyboard */; };
 		1DA591222174C18500288E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA591212174C18500288E9E /* Assets.xcassets */; };
 		1DA591252174C18500288E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA591232174C18500288E9E /* LaunchScreen.storyboard */; };
+		FF54D2622174DA200010CF96 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF54D2612174DA000010CF96 /* Montserrat-Medium.otf */; };
+		FF54D2692174DE3D0010CF96 /* img in Resources */ = {isa = PBXBuildFile; fileRef = FF54D2682174DE3D0010CF96 /* img */; };
+		FF54D26C2174E2140010CF96 /* berkshireswash-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF54D26B2174E1850010CF96 /* berkshireswash-regular.ttf */; };
+		FF54D26D2174E2190010CF96 /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF54D2632174DB710010CF96 /* Montserrat-ExtraBold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		1DA591212174C18500288E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DA591242174C18500288E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DA591262174C18500288E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF54D2612174DA000010CF96 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Medium.otf"; path = "../../../../Downloads/montserrat/Montserrat-Medium.otf"; sourceTree = "<group>"; };
+		FF54D2632174DB710010CF96 /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraBold.otf"; path = "../../../../Downloads/montserrat/Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
+		FF54D2682174DE3D0010CF96 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; name = img; path = ../../../.Trash/img; sourceTree = "<group>"; };
+		FF54D26B2174E1850010CF96 /* berkshireswash-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "berkshireswash-regular.ttf"; path = "../../../../Downloads/berkshire-swash/berkshireswash-regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		1DA591192174C18400288E9E /* Iter */ = {
 			isa = PBXGroup;
 			children = (
+				FF54D25E2174D9DA0010CF96 /* font */,
 				1DA5911A2174C18400288E9E /* AppDelegate.swift */,
 				1DA5911C2174C18400288E9E /* ViewController.swift */,
 				1DA5911E2174C18400288E9E /* Main.storyboard */,
 				1DA591212174C18500288E9E /* Assets.xcassets */,
+				FF54D2682174DE3D0010CF96 /* img */,
 				1DA591232174C18500288E9E /* LaunchScreen.storyboard */,
 				1DA591262174C18500288E9E /* Info.plist */,
 			);
 			path = Iter;
+			sourceTree = "<group>";
+		};
+		FF54D25E2174D9DA0010CF96 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				FF54D2612174DA000010CF96 /* Montserrat-Medium.otf */,
+				FF54D26B2174E1850010CF96 /* berkshireswash-regular.ttf */,
+				FF54D2632174DB710010CF96 /* Montserrat-ExtraBold.otf */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +142,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF54D26D2174E2190010CF96 /* Montserrat-ExtraBold.otf in Resources */,
+				FF54D2692174DE3D0010CF96 /* img in Resources */,
+				FF54D2622174DA200010CF96 /* Montserrat-Medium.otf in Resources */,
 				1DA591252174C18500288E9E /* LaunchScreen.storyboard in Resources */,
 				1DA591222174C18500288E9E /* Assets.xcassets in Resources */,
+				FF54D26C2174E2140010CF96 /* berkshireswash-regular.ttf in Resources */,
 				1DA591202174C18400288E9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
