@@ -17,6 +17,9 @@
 		FF8840C92175DA880074AD61 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF8840C72175DA040074AD61 /* Montserrat-Medium.otf */; };
 		FF8840CA2175DA8B0074AD61 /* berkshireswash-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8840C52175D9E60074AD61 /* berkshireswash-regular.ttf */; };
 		FF8840CC2175E12F0074AD61 /* HeadLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8840CB2175E12F0074AD61 /* HeadLine.swift */; };
+		FFADC107217663F000D85FF9 /* amsterdam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFADC106217663F000D85FF9 /* amsterdam.jpg */; };
+		FFADC1092176640200D85FF9 /* milan.png in Resources */ = {isa = PBXBuildFile; fileRef = FFADC1082176640200D85FF9 /* milan.png */; };
+		FFADC10B2176641400D85FF9 /* caserta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFADC10A2176641400D85FF9 /* caserta.jpg */; };
 		FFB1AC7121760695003503E0 /* Rome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFB1AC7021760695003503E0 /* Rome.jpg */; };
 		FFB1AC74217617D7003503E0 /* CellsBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB1AC72217617D7003503E0 /* CellsBtn.swift */; };
 		FFB1AC75217617D7003503E0 /* CellsBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB1AC73217617D7003503E0 /* CellsBtn.xib */; };
@@ -37,6 +40,9 @@
 		FF8840C62175D9F50074AD61 /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
 		FF8840C72175DA040074AD61 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
 		FF8840CB2175E12F0074AD61 /* HeadLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadLine.swift; sourceTree = "<group>"; };
+		FFADC106217663F000D85FF9 /* amsterdam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = amsterdam.jpg; sourceTree = "<group>"; };
+		FFADC1082176640200D85FF9 /* milan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = milan.png; sourceTree = "<group>"; };
+		FFADC10A2176641400D85FF9 /* caserta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = caserta.jpg; sourceTree = "<group>"; };
 		FFB1AC7021760695003503E0 /* Rome.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rome.jpg; sourceTree = "<group>"; };
 		FFB1AC72217617D7003503E0 /* CellsBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsBtn.swift; sourceTree = "<group>"; };
 		FFB1AC73217617D7003503E0 /* CellsBtn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellsBtn.xib; sourceTree = "<group>"; };
@@ -106,6 +112,9 @@
 			children = (
 				FFB1AC7021760695003503E0 /* Rome.jpg */,
 				FFB1AC7621761C0B003503E0 /* florence.jpg */,
+				FFADC1082176640200D85FF9 /* milan.png */,
+				FFADC10A2176641400D85FF9 /* caserta.jpg */,
+				FFADC106217663F000D85FF9 /* amsterdam.jpg */,
 			);
 			path = cities;
 			sourceTree = "<group>";
@@ -171,8 +180,11 @@
 				FFB1AC75217617D7003503E0 /* CellsBtn.xib in Resources */,
 				FF8840C82175DA860074AD61 /* Montserrat-ExtraBold.otf in Resources */,
 				FF8840C92175DA880074AD61 /* Montserrat-Medium.otf in Resources */,
+				FFADC107217663F000D85FF9 /* amsterdam.jpg in Resources */,
 				FFB1AC7121760695003503E0 /* Rome.jpg in Resources */,
+				FFADC1092176640200D85FF9 /* milan.png in Resources */,
 				FF54D2692174DE3D0010CF96 /* img in Resources */,
+				FFADC10B2176641400D85FF9 /* caserta.jpg in Resources */,
 				1DA591252174C18500288E9E /* LaunchScreen.storyboard in Resources */,
 				1DA591222174C18500288E9E /* Assets.xcassets in Resources */,
 				FFB1AC7721761C0B003503E0 /* florence.jpg in Resources */,
