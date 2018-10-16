@@ -12,6 +12,10 @@ class CellsBtn: UITableViewCell {
 
     @IBOutlet weak var ImgBtn: UIImageView!
     @IBOutlet weak var BtnCities: UIButton!
+    
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

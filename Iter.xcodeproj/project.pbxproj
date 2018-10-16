@@ -21,6 +21,7 @@
 		FFB1AC74217617D7003503E0 /* CellsBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB1AC72217617D7003503E0 /* CellsBtn.swift */; };
 		FFB1AC75217617D7003503E0 /* CellsBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB1AC73217617D7003503E0 /* CellsBtn.xib */; };
 		FFB1AC7721761C0B003503E0 /* florence.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFB1AC7621761C0B003503E0 /* florence.jpg */; };
+		FFB1AC79217639BA003503E0 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB1AC78217639BA003503E0 /* BorderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		FFB1AC72217617D7003503E0 /* CellsBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsBtn.swift; sourceTree = "<group>"; };
 		FFB1AC73217617D7003503E0 /* CellsBtn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellsBtn.xib; sourceTree = "<group>"; };
 		FFB1AC7621761C0B003503E0 /* florence.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = florence.jpg; sourceTree = "<group>"; };
+		FFB1AC78217639BA003503E0 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		1DA5910E2174C18400288E9E = {
 			isa = PBXGroup;
 			children = (
+				FFB1AC78217639BA003503E0 /* BorderButton.swift */,
 				1DA591192174C18400288E9E /* Iter */,
 				1DA591182174C18400288E9E /* Products */,
 			);
@@ -188,6 +191,7 @@
 				FFB1AC74217617D7003503E0 /* CellsBtn.swift in Sources */,
 				FF8840CC2175E12F0074AD61 /* HeadLine.swift in Sources */,
 				1DA5911D2174C18400288E9E /* ViewController.swift in Sources */,
+				FFB1AC79217639BA003503E0 /* BorderButton.swift in Sources */,
 				1DA5911B2174C18400288E9E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
