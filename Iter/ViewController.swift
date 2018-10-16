@@ -20,8 +20,9 @@ class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSou
         return(ArrayCity.count)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        return 110
     }
+
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         /*let cells=UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "CityCell")
@@ -36,6 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSou
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         ArrayCity=[buttonCity(City: "Rome", Img:UIImage(named: "Rome.jpg")),
         buttonCity(City: "Florence", Img: UIImage(named: "florence.jpg"))]
         
