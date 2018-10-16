@@ -6,7 +6,6 @@
 	<array>
 		<string>berkshireswash-regular.ttf</string>
 		<string>Montserrat-ExtraBold.otf</string>
-		<string>Montserrat-Medium.otf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
