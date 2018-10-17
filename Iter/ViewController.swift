@@ -12,6 +12,7 @@ struct buttonCity {
     var City:String!
     var Img:UIImage!
 }
+
 class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSource{
     var ArrayCity=[buttonCity]()
     var searchCity=[buttonCity]()
@@ -73,10 +74,17 @@ class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSou
         return 1
     }
     
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//
+//        navigationController?.setNavigationBarHidden(true, animated: false)
+//    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.setNavigationBarHidden(true, animated: false)
         ArrayCity=[buttonCity(City: "Rome", Img:UIImage(named: "Rome.jpg")),
         buttonCity(City: "Florence", Img: UIImage(named: "florence.jpg")),
         buttonCity(City: "Milan", Img: UIImage(named: "milan.png")),

@@ -12,6 +12,7 @@
 		1DA591202174C18400288E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA5911E2174C18400288E9E /* Main.storyboard */; };
 		1DA591222174C18500288E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA591212174C18500288E9E /* Assets.xcassets */; };
 		1DA591252174C18500288E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA591232174C18500288E9E /* LaunchScreen.storyboard */; };
+		FF157EFF2177661F00A34A8B /* GeneralCityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF157EFE2177661F00A34A8B /* GeneralCityController.swift */; };
 		FF54D2692174DE3D0010CF96 /* img in Resources */ = {isa = PBXBuildFile; fileRef = FF54D2682174DE3D0010CF96 /* img */; };
 		FF8840C82175DA860074AD61 /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF8840C62175D9F50074AD61 /* Montserrat-ExtraBold.otf */; };
 		FF8840C92175DA880074AD61 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF8840C72175DA040074AD61 /* Montserrat-Medium.otf */; };
@@ -35,6 +36,10 @@
 		1DA591212174C18500288E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DA591242174C18500288E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DA591262174C18500288E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF157EFE2177661F00A34A8B /* GeneralCityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCityController.swift; sourceTree = "<group>"; };
+		FF157F01217768A200A34A8B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		FF157F04217768A200A34A8B /* naples.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = naples.jpg; sourceTree = "<group>"; };
+		FF157F05217768A200A34A8B /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		FF54D2682174DE3D0010CF96 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; name = img; path = ../../../.Trash/img; sourceTree = "<group>"; };
 		FF8840C52175D9E60074AD61 /* berkshireswash-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "berkshireswash-regular.ttf"; sourceTree = "<group>"; };
 		FF8840C62175D9F50074AD61 /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
@@ -64,9 +69,9 @@
 		1DA5910E2174C18400288E9E = {
 			isa = PBXGroup;
 			children = (
-				FFB1AC78217639BA003503E0 /* BorderButton.swift */,
 				1DA591192174C18400288E9E /* Iter */,
 				1DA591182174C18400288E9E /* Products */,
+				FF157EFD2177638100A34A8B /* Cells */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,29 +87,65 @@
 			isa = PBXGroup;
 			children = (
 				FFB1AC6F2176068B003503E0 /* cities */,
-				FF54D25E2174D9DA0010CF96 /* font */,
+				FF54D25E2174D9DA0010CF96 /* fonts */,
 				1DA5911A2174C18400288E9E /* AppDelegate.swift */,
+				1DA591232174C18500288E9E /* LaunchScreen.storyboard */,
 				1DA5911C2174C18400288E9E /* ViewController.swift */,
+				FF157EFE2177661F00A34A8B /* GeneralCityController.swift */,
 				1DA5911E2174C18400288E9E /* Main.storyboard */,
 				1DA591212174C18500288E9E /* Assets.xcassets */,
 				FF54D2682174DE3D0010CF96 /* img */,
-				1DA591232174C18500288E9E /* LaunchScreen.storyboard */,
 				1DA591262174C18500288E9E /* Info.plist */,
 				FF8840CB2175E12F0074AD61 /* HeadLine.swift */,
-				FFB1AC72217617D7003503E0 /* CellsBtn.swift */,
-				FFB1AC73217617D7003503E0 /* CellsBtn.xib */,
+				FFB1AC78217639BA003503E0 /* BorderButton.swift */,
 			);
 			path = Iter;
 			sourceTree = "<group>";
 		};
-		FF54D25E2174D9DA0010CF96 /* font */ = {
+		FF157EFD2177638100A34A8B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				FFB1AC72217617D7003503E0 /* CellsBtn.swift */,
+				FFB1AC73217617D7003503E0 /* CellsBtn.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FF157F00217768A200A34A8B /* img */ = {
+			isa = PBXGroup;
+			children = (
+				FF157F01217768A200A34A8B /* icon.png */,
+				FF157F02217768A200A34A8B /* btn */,
+				FF157F03217768A200A34A8B /* cities */,
+				FF157F05217768A200A34A8B /* bg.jpg */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		FF157F02217768A200A34A8B /* btn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = btn;
+			sourceTree = "<group>";
+		};
+		FF157F03217768A200A34A8B /* cities */ = {
+			isa = PBXGroup;
+			children = (
+				FF157F04217768A200A34A8B /* naples.jpg */,
+			);
+			path = cities;
+			sourceTree = "<group>";
+		};
+		FF54D25E2174D9DA0010CF96 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FF157F00217768A200A34A8B /* img */,
 				FF8840C62175D9F50074AD61 /* Montserrat-ExtraBold.otf */,
 				FF8840C72175DA040074AD61 /* Montserrat-Medium.otf */,
 				FF8840C52175D9E60074AD61 /* berkshireswash-regular.ttf */,
 			);
-			path = font;
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		FFB1AC6F2176068B003503E0 /* cities */ = {
@@ -201,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFB1AC74217617D7003503E0 /* CellsBtn.swift in Sources */,
+				FF157EFF2177661F00A34A8B /* GeneralCityController.swift in Sources */,
 				FF8840CC2175E12F0074AD61 /* HeadLine.swift in Sources */,
 				1DA5911D2174C18400288E9E /* ViewController.swift in Sources */,
 				FFB1AC79217639BA003503E0 /* BorderButton.swift in Sources */,
