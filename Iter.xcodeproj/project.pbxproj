@@ -12,13 +12,7 @@
 		1DA591202174C18400288E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA5911E2174C18400288E9E /* Main.storyboard */; };
 		1DA591222174C18500288E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA591212174C18500288E9E /* Assets.xcassets */; };
 		1DA591252174C18500288E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA591232174C18500288E9E /* LaunchScreen.storyboard */; };
-		79EFABBC217778E70033DA52 /* weatherbtn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79EFABB5217778E70033DA52 /* weatherbtn.jpg */; };
-		79EFABBE217778E70033DA52 /* transportbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EFABB7217778E70033DA52 /* transportbtn.png */; };
-		79EFABBF217778E70033DA52 /* foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79EFABB8217778E70033DA52 /* foto.jpg */; };
-		79EFABC0217778E70033DA52 /* housingbtn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79EFABB9217778E70033DA52 /* housingbtn.jpg */; };
-		79EFABC1217778E70033DA52 /* pizza-14-13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79EFABBA217778E70033DA52 /* pizza-14-13.jpg */; };
-		79EFABC2217778E70033DA52 /* foodbtn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79EFABBB217778E70033DA52 /* foodbtn.jpg */; };
-		79EFABC4217793F40033DA52 /* naplesBg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79EFABC3217793F40033DA52 /* naplesBg.jpg */; };
+		B8FE5BE42177BAF80075D38D /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FE5BE32177BAF80075D38D /* FoodViewController.swift */; };
 		FF157EFF2177661F00A34A8B /* GeneralCityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF157EFE2177661F00A34A8B /* GeneralCityController.swift */; };
 		FF8840C82175DA860074AD61 /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF8840C62175D9F50074AD61 /* Montserrat-ExtraBold.otf */; };
 		FF8840C92175DA880074AD61 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF8840C72175DA040074AD61 /* Montserrat-Medium.otf */; };
@@ -42,13 +36,7 @@
 		1DA591212174C18500288E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DA591242174C18500288E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DA591262174C18500288E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79EFABB5217778E70033DA52 /* weatherbtn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = weatherbtn.jpg; path = ../../../Downloads/weatherbtn.jpg; sourceTree = "<group>"; };
-		79EFABB7217778E70033DA52 /* transportbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = transportbtn.png; path = ../../../Downloads/transportbtn.png; sourceTree = "<group>"; };
-		79EFABB8217778E70033DA52 /* foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = foto.jpg; path = ../../../Downloads/foto.jpg; sourceTree = "<group>"; };
-		79EFABB9217778E70033DA52 /* housingbtn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = housingbtn.jpg; path = ../../../Downloads/housingbtn.jpg; sourceTree = "<group>"; };
-		79EFABBA217778E70033DA52 /* pizza-14-13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "pizza-14-13.jpg"; path = "../../../Downloads/pizza-14-13.jpg"; sourceTree = "<group>"; };
-		79EFABBB217778E70033DA52 /* foodbtn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = foodbtn.jpg; path = ../../../Downloads/foodbtn.jpg; sourceTree = "<group>"; };
-		79EFABC3217793F40033DA52 /* naplesBg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = naplesBg.jpg; path = ../../../Desktop/naplesBg.jpg; sourceTree = "<group>"; };
+		B8FE5BE32177BAF80075D38D /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		FF157EFE2177661F00A34A8B /* GeneralCityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCityController.swift; sourceTree = "<group>"; };
 		FF157F01217768A200A34A8B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		FF157F04217768A200A34A8B /* naples.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = naples.jpg; sourceTree = "<group>"; };
@@ -84,7 +72,6 @@
 				1DA591192174C18400288E9E /* Iter */,
 				1DA591182174C18400288E9E /* Products */,
 				FF157EFD2177638100A34A8B /* Cells */,
-				79EFABB4217778270033DA52 /* 2° Page */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,26 +93,13 @@
 				1DA5911C2174C18400288E9E /* ViewController.swift */,
 				FF157EFE2177661F00A34A8B /* GeneralCityController.swift */,
 				1DA5911E2174C18400288E9E /* Main.storyboard */,
+				B8FE5BE32177BAF80075D38D /* FoodViewController.swift */,
 				1DA591212174C18500288E9E /* Assets.xcassets */,
 				1DA591262174C18500288E9E /* Info.plist */,
 				FF8840CB2175E12F0074AD61 /* HeadLine.swift */,
 				FFB1AC78217639BA003503E0 /* BorderButton.swift */,
 			);
 			path = Iter;
-			sourceTree = "<group>";
-		};
-		79EFABB4217778270033DA52 /* 2° Page */ = {
-			isa = PBXGroup;
-			children = (
-				79EFABBB217778E70033DA52 /* foodbtn.jpg */,
-				79EFABB8217778E70033DA52 /* foto.jpg */,
-				79EFABB9217778E70033DA52 /* housingbtn.jpg */,
-				79EFABBA217778E70033DA52 /* pizza-14-13.jpg */,
-				79EFABB7217778E70033DA52 /* transportbtn.png */,
-				79EFABB5217778E70033DA52 /* weatherbtn.jpg */,
-				79EFABC3217793F40033DA52 /* naplesBg.jpg */,
-			);
-			path = "2° Page";
 			sourceTree = "<group>";
 		};
 		FF157EFD2177638100A34A8B /* Cells */ = {
@@ -250,19 +224,12 @@
 				FFADC107217663F000D85FF9 /* amsterdam.jpg in Resources */,
 				FFB1AC7121760695003503E0 /* Rome.jpg in Resources */,
 				FFADC1092176640200D85FF9 /* milan.png in Resources */,
-				79EFABC1217778E70033DA52 /* pizza-14-13.jpg in Resources */,
 				FFADC10B2176641400D85FF9 /* caserta.jpg in Resources */,
 				1DA591252174C18500288E9E /* LaunchScreen.storyboard in Resources */,
 				1DA591222174C18500288E9E /* Assets.xcassets in Resources */,
-				79EFABC4217793F40033DA52 /* naplesBg.jpg in Resources */,
 				FFB1AC7721761C0B003503E0 /* florence.jpg in Resources */,
-				79EFABC0217778E70033DA52 /* housingbtn.jpg in Resources */,
-				79EFABBC217778E70033DA52 /* weatherbtn.jpg in Resources */,
-				79EFABC2217778E70033DA52 /* foodbtn.jpg in Resources */,
 				1DA591202174C18400288E9E /* Main.storyboard in Resources */,
-				79EFABBE217778E70033DA52 /* transportbtn.png in Resources */,
 				FF8840CA2175DA8B0074AD61 /* berkshireswash-regular.ttf in Resources */,
-				79EFABBF217778E70033DA52 /* foto.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFB1AC74217617D7003503E0 /* CellsBtn.swift in Sources */,
+				B8FE5BE42177BAF80075D38D /* FoodViewController.swift in Sources */,
 				FF157EFF2177661F00A34A8B /* GeneralCityController.swift in Sources */,
 				FF8840CC2175E12F0074AD61 /* HeadLine.swift in Sources */,
 				1DA5911D2174C18400288E9E /* ViewController.swift in Sources */,
