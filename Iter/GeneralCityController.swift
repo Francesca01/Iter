@@ -12,7 +12,7 @@ class GeneralCityController: UIViewController, UIScrollViewDelegate{
 
     @IBOutlet weak var ScrollView: UIScrollView!
     @IBOutlet weak var PageControl: UIPageControl!
-    var texts: [String] = ["JDIJI", "JIJJ", "fijfidjfie", "fjidjfijfsi"]
+    var texts: [String] = ["JDIJIohgfkhgfkjhgfdghjkhgfdghjkhgfdxfghjkjhgfdxdfghjhgfcxfghjgfcxfghjkhgfcghjkjhgfcghjkjuygfdghjikhgfcdxghukjhgfchjkhgfcghkjhgcfxfghjkgfcghjkhgfcxdghjkjhgfcghjkhgfcxdcfghjkhgfcdxzfghjkjhgfcxdfghjkjhgfcxdfcghjkhgvcxfcghjklhgfcdxfghjkjhgcfxdfghjkhgcfxfcghjkljhgcfxdcfghjkljhgfcxdfghjklkjhgfcghjklkjhgfdxfghjklkjhgfcxdfghkjhgfdxfghjkjhugyfdxfghkljhgfcdxfghjkljhgfdxfghjiojuhgfdgyuihygtfdsfyuiolkjhgfdxfftgyuiojhgfdfghjiolkjhgfdfghlokjhgfdghjkiljhgfdJDIJIohgfkhgfkjhgfdghjkhgfdghjkhgfdxfghjkjhgfdxdfghjhgfcxfghjgfcxfghjkhgfcghjkjhgfcghjkjuygfdghjikhgfcdxghukjhgfchjkhgfcghkjhgcfxfghjkgfcghjkhgfcxdghjkjhgfcghjkhgfcxdcfghjkhgfcdxzfghjkjhgfcxdfghjkjhgfcxdfcghjkhgvcxfcghjklhgfcdxfghjkjhgcfxdfghjkhgcfxfcghjkljhgcfxdcfghjkljhgfcxdfghjklkjhgfcghjklkjhgfdxfghjklkjhgfcxdfghkjhgfdxfghjkjhugyfdxfghkljhgfcdxfghjkljhgfdxfghjiojuhgfdgyuihygtfdsfyuiolkjhgfdxfftgyuiojhgfdfghjiolkjhgfdfghlokjhgfdghjkiljhgfd", "JIJJ", "fijfidjfie", "fjidjfijfsi"]
     var frame = CGRect (x:0, y:0, width:0, height:0 )
     
     
