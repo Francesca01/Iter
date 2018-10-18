@@ -19,7 +19,9 @@ class FoodViewController: UIViewController, UIScrollViewDelegate,UICollectionVie
        var Object4=Places(Img: UIImage(named: "nennella.jpg"), Title: "Nennella", Distance: 20)
     var ArrayPlaces=[Places]()
 
-    var texts: [String] = ["The renowned Neapolitan cuisine boasts ancient origins with an endless variety of dishes, based on fresh local ingredients, such as fish, mozzarella, Vesuvius tomatoes, meat, vegetables and legumes. Some dishes are among the most popular, not only in Italy, but also in the entire world: just simply think of the classic pasta with tomato and basil, or the buffalo mozzarella, or the pizza (of course), which is considered the universal symbol of Italian culinary traditions. So, here’s a list of the top 10 (+1) dishes you must absolutely try if you visit Naples. But be careful: some of them might be addictive!", "Food2", "Food3", "Food4"]
+    var texts: [String] = ["The renowned Neapolitan cuisine boasts ancient origins with an endless variety of dishes, based on fresh local ingredients, such as fish, mozzarella, Vesuvius tomatoes, meat, vegetables and legumes.\n \nSome dishes are among the most popular, not only in Italy, but also in the entire world: just simply think of the classic pasta with tomato and basil, or the buffalo mozzarella, or the pizza (of course), which is considered the universal symbol of Italian culinary traditions.\n \nSo, here’s a list of the top 10 (+1) dishes you must absolutely try if you visit Naples. But be careful: some of them might be addictive!",
+                           
+                           "Pizza\n \nWhile the world pizza-making championships being held at the Napoli Pizza Village festival this week (1-10 June) will see the finest pizzaioli from across the city compete for the 2018 title, Neapolitans will attest there are pizzerias in every neighbourhood worthy of an accolade. There are more than 800 pizzerias in the birthplace of pizza, but only 100 can boast certification by the Associazione Verace Pizza Napoletana (AVPN), the regulatory body that protects and ensures that the art of pizza-making and the ingredients used are in accordance with Neapolitan tradition.\n \nWhile the most logical way to spot a good pizzeria in Naples is to look out for Pizza Vera signs issued by the AVPN above restaurant doors, the real indication of good pizza is the queue on the street outside. If there aren’t ravenous-looking Neapolitans waiting outside the neighbourhood pizzeria, then there is reason to suggest the pizza hasn’t garnered the collective approval of the locals.", "Food3", "Food4"]
     var frame = CGRect (x:0, y:0, width:0, height:0 )
     
   
@@ -60,9 +62,24 @@ class FoodViewController: UIViewController, UIScrollViewDelegate,UICollectionVie
             let textView = UITextView (frame: frame)
             textView.text = texts[i]
             self.ScrollView.addSubview (textView)
-            textView.backgroundColor=UIColor.clear
-            ScrollView.backgroundColor=UIColor.clear
+            
+            
+            
+            //changing the property text font
+            
+            ScrollView.backgroundColor = UIColor.black.withAlphaComponent(0.3)
+            
+            textView.backgroundColor = UIColor.clear
             textView.isEditable = false
+            
+            textView.font = UIFont(name: "Helvetica", size: 12)
+            textView.textColor = UIColor.white
+            textView.textAlignment = .justified
+            //textView.contentInset = UIEdgeInsets.init(top: 10, left: 5,bottom: 5,right: 10)
+            
+            //textView.tintColor = UIColor.black
+            ScrollView.layer.cornerRadius = 10.0
+        
         }
         
         ScrollView.contentSize = CGSize (width: (ScrollView.frame.size.width * CGFloat(texts.count)), height: ScrollView.frame.height)
