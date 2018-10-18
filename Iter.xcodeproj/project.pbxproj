@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D3D7DC3217903AF009D0F0E /* CultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D7DC2217903AF009D0F0E /* CultureViewController.swift */; };
+		1D3D7DC521791223009D0F0E /* DaMicheleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D7DC421791223009D0F0E /* DaMicheleViewController.swift */; };
 		1DA5911B2174C18400288E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5911A2174C18400288E9E /* AppDelegate.swift */; };
 		1DA5911D2174C18400288E9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5911C2174C18400288E9E /* ViewController.swift */; };
 		1DA591202174C18400288E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA5911E2174C18400288E9E /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		1D3D7DC2217903AF009D0F0E /* CultureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureViewController.swift; sourceTree = "<group>"; };
+		1D3D7DC421791223009D0F0E /* DaMicheleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaMicheleViewController.swift; sourceTree = "<group>"; };
 		1DA591172174C18400288E9E /* Iter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA5911A2174C18400288E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DA5911C2174C18400288E9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				1DA5911C2174C18400288E9E /* ViewController.swift */,
 				FF157EFE2177661F00A34A8B /* GeneralCityController.swift */,
 				1DA5911E2174C18400288E9E /* Main.storyboard */,
+				1D3D7DC421791223009D0F0E /* DaMicheleViewController.swift */,
 				B8FE5BE32177BAF80075D38D /* FoodViewController.swift */,
 				1D3D7DC2217903AF009D0F0E /* CultureViewController.swift */,
 				1DA591212174C18500288E9E /* Assets.xcassets */,
@@ -249,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3D7DC521791223009D0F0E /* DaMicheleViewController.swift in Sources */,
 				FFB1AC74217617D7003503E0 /* CellsBtn.swift in Sources */,
 				B8FE5BE42177BAF80075D38D /* FoodViewController.swift in Sources */,
 				FF157EFF2177661F00A34A8B /* GeneralCityController.swift in Sources */,
