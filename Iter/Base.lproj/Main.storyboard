@@ -493,6 +493,7 @@ in the City</string>
                     <connections>
                         <outlet property="searchBar" destination="blG-JH-noS" id="iqF-e6-Tlj"/>
                         <outlet property="tblView" destination="cPd-vm-KIC" id="umR-yP-VNb"/>
+                        <segue destination="BYZ-38-t0r" kind="show" id="TvX-RQ-jXV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thh-TO-eY0" sceneMemberID="firstResponder"/>

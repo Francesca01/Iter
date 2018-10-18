@@ -14,11 +14,12 @@ struct buttonCity {
     var Img:UIImage!
 }
 
-class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSource{
+class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSource,  CLLocationManagerDelegate{
     var ArrayCity=[buttonCity]()
     var searchCity=[buttonCity]()
     var searching = false
     var locationManager = CLLocationManager()
+
     
     @IBOutlet weak var tblView: UITableView!
     
@@ -92,7 +93,19 @@ class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSou
         buttonCity(City: "Milan", Img: UIImage(named: "milan.png")),
         buttonCity(City: "Caserta", Img: UIImage(named: "caserta.jpg")),
         buttonCity(City: "Amsterdam", Img: UIImage(named: "amsterdam.jpg"))]
-        location()
+        if CLLocationManager.locationServicesEnabled() {
+            if CLLocationManager.authorizationStatus() == .restricted || CLLocationManager.authorizationStatus() == .denied || CLLocationManager.authorizationStatus() == .notDetermined{
+                
+                //        Richiesta Autorizzazione
+                locationManager.requestWhenInUseAuthorization()
+            }
+                    locationManager.desiredAccuracy = 1.0
+                    locationManager.delegate = self
+                    locationManager.startUpdatingLocation()
+        }
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -120,18 +133,6 @@ extension ViewController: UISearchBarDelegate {
 }
 
 
-func location(){
-    if CLLocationManager.locationServicesEnabled() {
-        if CLLocationManager.authorizationStatus() == .restricted || CLLocationManager.authorizationStatus() == .denied || CLLocationManager.authorizationStatus() == .notDetermined{
-            
-            //        Richiesta Autorizzazione
-            locationManager.requestWhenInUseAuthorization()
-        }
-        locationManager.desiredAccuracy = 1.0
-        locationManager.delegate = self
-        locationManager.startUpdatingLocation()
-    }
-}
 
 
 
