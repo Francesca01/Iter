@@ -78,8 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				1DA591192174C18400288E9E /* Iter */,
-				1DA591182174C18400288E9E /* Products */,
-				FF157EFD2177638100A34A8B /* Cells */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,29 +87,57 @@
 				1DA591172174C18400288E9E /* Iter.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		1DA591192174C18400288E9E /* Iter */ = {
 			isa = PBXGroup;
 			children = (
+				1DA591182174C18400288E9E /* Products */,
+				FF157EFD2177638100A34A8B /* Cells */,
 				FFB1AC6F2176068B003503E0 /* cities */,
+				FF157F00217768A200A34A8B /* img */,
 				FF54D25E2174D9DA0010CF96 /* fonts */,
+				B876313A217936BF00CFAB1F /* Storyboard */,
+				1DA591212174C18500288E9E /* Assets.xcassets */,
+				1DA591262174C18500288E9E /* Info.plist */,
 				1DA5911A2174C18400288E9E /* AppDelegate.swift */,
+				B876313B217936E100CFAB1F /* PageController */,
+				B876313C2179373C00CFAB1F /* OtherClasses */,
+			);
+			path = Iter;
+			sourceTree = "<group>";
+		};
+		B876313A217936BF00CFAB1F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
 				1DA591232174C18500288E9E /* LaunchScreen.storyboard */,
+				1DA5911E2174C18400288E9E /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B876313B217936E100CFAB1F /* PageController */ = {
+			isa = PBXGroup;
+			children = (
 				1DA5911C2174C18400288E9E /* ViewController.swift */,
 				FF157EFE2177661F00A34A8B /* GeneralCityController.swift */,
-				1DA5911E2174C18400288E9E /* Main.storyboard */,
 				1D3D7DC421791223009D0F0E /* DaMicheleViewController.swift */,
 				B8FE5BE32177BAF80075D38D /* FoodViewController.swift */,
 				1D3D7DC2217903AF009D0F0E /* CultureViewController.swift */,
-				1DA591212174C18500288E9E /* Assets.xcassets */,
-				1DA591262174C18500288E9E /* Info.plist */,
+			);
+			path = PageController;
+			sourceTree = "<group>";
+		};
+		B876313C2179373C00CFAB1F /* OtherClasses */ = {
+			isa = PBXGroup;
+			children = (
 				FF8840CB2175E12F0074AD61 /* HeadLine.swift */,
 				FFB1AC78217639BA003503E0 /* BorderButton.swift */,
 				FF437ED62178D19C0065AEC0 /* Places.swift */,
 				FF437ED82178D2230065AEC0 /* CustomCells.swift */,
 			);
-			path = Iter;
+			path = OtherClasses;
 			sourceTree = "<group>";
 		};
 		FF157EFD2177638100A34A8B /* Cells */ = {
@@ -152,7 +178,6 @@
 		FF54D25E2174D9DA0010CF96 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				FF157F00217768A200A34A8B /* img */,
 				FF8840C62175D9F50074AD61 /* Montserrat-ExtraBold.otf */,
 				FF8840C72175DA040074AD61 /* Montserrat-Medium.otf */,
 				FF8840C52175D9E60074AD61 /* berkshireswash-regular.ttf */,

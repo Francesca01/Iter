@@ -329,13 +329,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" About the Food" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQ0-Mh-Mby" userLabel="About the Food">
-                                                <rect key="frame" x="5" y="0.0" width="365" height="30"/>
-                                                <fontDescription key="fontDescription" name="BerkshireSwash-Regular" family="Berkshire Swash" pointSize="24"/>
+                                                <rect key="frame" x="5" y="0.0" width="365" height="35"/>
+                                                <fontDescription key="fontDescription" name="BerkshireSwash-Regular" family="Berkshire Swash" pointSize="28"/>
                                                 <color key="textColor" red="0.086274509803921567" green="0.25490196078431371" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="scrollableAxes" indicatorStyle="white" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlK-da-chG">
-                                                <rect key="frame" x="5" y="30" width="365" height="203"/>
+                                                <rect key="frame" x="5" y="35" width="365" height="229.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
@@ -343,19 +343,16 @@
                                                 </connections>
                                             </scrollView>
                                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="jWf-mQ-uyf">
-                                                <rect key="frame" x="168" y="233" width="39" height="68.5"/>
+                                                <rect key="frame" x="168" y="264.5" width="39" height="37"/>
                                                 <color key="pageIndicatorTintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </pageControl>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="VQ0-Mh-Mby" firstAttribute="leading" secondItem="JOY-hh-qcM" secondAttribute="leading" id="7XS-IK-cNz"/>
-                                            <constraint firstAttribute="trailing" secondItem="WlK-da-chG" secondAttribute="trailing" constant="5" id="9Lb-AN-S9Q"/>
-                                            <constraint firstItem="VQ0-Mh-Mby" firstAttribute="top" secondItem="JOY-hh-qcM" secondAttribute="top" constant="20" id="DrX-oU-7ZS"/>
-                                            <constraint firstAttribute="trailing" secondItem="VQ0-Mh-Mby" secondAttribute="trailing" id="Hug-b5-GJB"/>
-                                            <constraint firstItem="WlK-da-chG" firstAttribute="top" secondItem="VQ0-Mh-Mby" secondAttribute="bottom" constant="20" id="IAZ-eT-74I"/>
-                                            <constraint firstItem="WlK-da-chG" firstAttribute="leading" secondItem="VQ0-Mh-Mby" secondAttribute="leading" id="KBy-Ob-AWv"/>
-                                            <constraint firstItem="WlK-da-chG" firstAttribute="top" secondItem="VQ0-Mh-Mby" secondAttribute="bottom" constant="5" id="UcH-Rp-efz"/>
-                                            <constraint firstItem="WlK-da-chG" firstAttribute="leading" secondItem="JOY-hh-qcM" secondAttribute="leading" constant="5" id="j2e-Xo-Axp"/>
+                                            <constraint firstItem="WlK-da-chG" firstAttribute="leading" secondItem="JOY-hh-qcM" secondAttribute="leading" constant="5" id="9q9-62-jHZ"/>
+                                            <constraint firstItem="WlK-da-chG" firstAttribute="top" secondItem="VQ0-Mh-Mby" secondAttribute="bottom" constant="5" id="CkL-SQ-eKN"/>
+                                            <constraint firstItem="VQ0-Mh-Mby" firstAttribute="leading" secondItem="WlK-da-chG" secondAttribute="leading" id="KbA-vI-cvi"/>
+                                            <constraint firstItem="VQ0-Mh-Mby" firstAttribute="top" secondItem="JOY-hh-qcM" secondAttribute="top" constant="20" id="NSb-2b-BkT"/>
+                                            <constraint firstAttribute="trailing" secondItem="WlK-da-chG" secondAttribute="trailing" constant="5" id="fKI-OB-wUU"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XcX-1T-Rin">
@@ -363,8 +360,8 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R25-OG-1Ph">
                                                 <rect key="frame" x="5" y="0.0" width="365" height="75"/>
-                                                <string key="text">Best Restaurant 
-in the City</string>
+                                                <string key="text"> Best Restaurant 
+  in the City</string>
                                                 <fontDescription key="fontDescription" name="BerkshireSwash-Regular" family="Berkshire Swash" pointSize="30"/>
                                                 <color key="textColor" red="0.086274509803921567" green="0.25490196078431371" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -470,7 +467,7 @@ in the City</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VKq-0x-0Up" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-444" y="-9"/>
+            <point key="canvasLocation" x="-177" y="-9"/>
         </scene>
         <!--Culture-->
         <scene sceneID="E3x-2U-Wbx">
