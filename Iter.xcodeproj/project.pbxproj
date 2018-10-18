@@ -28,10 +28,6 @@
 		FFB1AC75217617D7003503E0 /* CellsBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB1AC73217617D7003503E0 /* CellsBtn.xib */; };
 		FFB1AC7721761C0B003503E0 /* florence.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFB1AC7621761C0B003503E0 /* florence.jpg */; };
 		FFB1AC79217639BA003503E0 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB1AC78217639BA003503E0 /* BorderButton.swift */; };
-		FFCB45132178C5A700E53F44 /* michele.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FFCB45122178C5A700E53F44 /* michele.jpeg */; };
-		FFCB45152178C61500E53F44 /* genovesi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFCB45142178C61500E53F44 /* genovesi.jpg */; };
-		FFCB45172178C61A00E53F44 /* Sorbillo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFCB45162178C61A00E53F44 /* Sorbillo.jpg */; };
-		FFCB45192178C62600E53F44 /* nennella.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFCB45182178C62600E53F44 /* nennella.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,10 +57,6 @@
 		FFB1AC73217617D7003503E0 /* CellsBtn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellsBtn.xib; sourceTree = "<group>"; };
 		FFB1AC7621761C0B003503E0 /* florence.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = florence.jpg; sourceTree = "<group>"; };
 		FFB1AC78217639BA003503E0 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
-		FFCB45122178C5A700E53F44 /* michele.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = michele.jpeg; path = ../../../../../Downloads/michele.jpeg; sourceTree = "<group>"; };
-		FFCB45142178C61500E53F44 /* genovesi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = genovesi.jpg; path = ../../../../../Downloads/genovesi.jpg; sourceTree = "<group>"; };
-		FFCB45162178C61A00E53F44 /* Sorbillo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Sorbillo.jpg; path = ../../../../../Downloads/Sorbillo.jpg; sourceTree = "<group>"; };
-		FFCB45182178C62600E53F44 /* nennella.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nennella.jpg; path = ../../../../../Downloads/nennella.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +157,6 @@
 		FFB1AC6F2176068B003503E0 /* cities */ = {
 			isa = PBXGroup;
 			children = (
-				FFCB45112178C59800E53F44 /* restraurant */,
 				FFB1AC7021760695003503E0 /* Rome.jpg */,
 				FFB1AC7621761C0B003503E0 /* florence.jpg */,
 				FFADC1082176640200D85FF9 /* milan.png */,
@@ -173,17 +164,6 @@
 				FFADC106217663F000D85FF9 /* amsterdam.jpg */,
 			);
 			path = cities;
-			sourceTree = "<group>";
-		};
-		FFCB45112178C59800E53F44 /* restraurant */ = {
-			isa = PBXGroup;
-			children = (
-				FFCB45122178C5A700E53F44 /* michele.jpeg */,
-				FFCB45142178C61500E53F44 /* genovesi.jpg */,
-				FFCB45162178C61A00E53F44 /* Sorbillo.jpg */,
-				FFCB45182178C62600E53F44 /* nennella.jpg */,
-			);
-			path = restraurant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,19 +224,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFCB45192178C62600E53F44 /* nennella.jpg in Resources */,
 				FFB1AC75217617D7003503E0 /* CellsBtn.xib in Resources */,
-				FFCB45132178C5A700E53F44 /* michele.jpeg in Resources */,
 				FF8840C82175DA860074AD61 /* Montserrat-ExtraBold.otf in Resources */,
 				FF8840C92175DA880074AD61 /* Montserrat-Medium.otf in Resources */,
 				FFADC107217663F000D85FF9 /* amsterdam.jpg in Resources */,
 				FFB1AC7121760695003503E0 /* Rome.jpg in Resources */,
 				FFADC1092176640200D85FF9 /* milan.png in Resources */,
-				FFCB45152178C61500E53F44 /* genovesi.jpg in Resources */,
 				FFADC10B2176641400D85FF9 /* caserta.jpg in Resources */,
 				1DA591252174C18500288E9E /* LaunchScreen.storyboard in Resources */,
 				1DA591222174C18500288E9E /* Assets.xcassets in Resources */,
-				FFCB45172178C61A00E53F44 /* Sorbillo.jpg in Resources */,
 				FFB1AC7721761C0B003503E0 /* florence.jpg in Resources */,
 				1DA591202174C18400288E9E /* Main.storyboard in Resources */,
 				FF8840CA2175DA8B0074AD61 /* berkshireswash-regular.ttf in Resources */,

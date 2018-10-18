@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 struct buttonCity {
     var City:String!
@@ -16,8 +17,8 @@ struct buttonCity {
 class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSource{
     var ArrayCity=[buttonCity]()
     var searchCity=[buttonCity]()
-    let listcity=["Rome","Florence","Milan"]
     var searching = false
+    var locationManager = CLLocationManager()
     
     @IBOutlet weak var tblView: UITableView!
     
@@ -85,12 +86,13 @@ class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: false)
-        ArrayCity=[buttonCity(City: "Rome", Img:UIImage(named: "Rome.jpg")),
+        ArrayCity=[buttonCity(City: "Naples", Img:UIImage(named: "naples.jpg")),
+        buttonCity(City: "Rome", Img:UIImage(named: "Rome.jpg")),
         buttonCity(City: "Florence", Img: UIImage(named: "florence.jpg")),
         buttonCity(City: "Milan", Img: UIImage(named: "milan.png")),
         buttonCity(City: "Caserta", Img: UIImage(named: "caserta.jpg")),
         buttonCity(City: "Amsterdam", Img: UIImage(named: "amsterdam.jpg"))]
-        
+        location()
     }
 
     override func didReceiveMemoryWarning() {
@@ -117,6 +119,19 @@ extension ViewController: UISearchBarDelegate {
     
 }
 
+
+func location(){
+    if CLLocationManager.locationServicesEnabled() {
+        if CLLocationManager.authorizationStatus() == .restricted || CLLocationManager.authorizationStatus() == .denied || CLLocationManager.authorizationStatus() == .notDetermined{
+            
+            //        Richiesta Autorizzazione
+            locationManager.requestWhenInUseAuthorization()
+        }
+        locationManager.desiredAccuracy = 1.0
+        locationManager.delegate = self
+        locationManager.startUpdatingLocation()
+    }
+}
 
 
 
