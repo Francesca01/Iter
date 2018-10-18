@@ -562,51 +562,55 @@ in the City</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FoodBG" translatesAutoresizingMaskIntoConstraints="NO" id="Adf-FE-Pmy">
-                                <rect key="frame" x="0.0" y="64" width="900" height="603"/>
+                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="micheleBg" translatesAutoresizingMaskIntoConstraints="NO" id="Adf-FE-Pmy">
+                                <rect key="frame" x="0.0" y="64" width="802" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.52577728430000004" green="0.0" blue="0.034402551509999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About the Food" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFe-G0-dL3">
-                                <rect key="frame" x="10" y="116" width="355" height="30"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iYc-Xq-X5E">
+                                <rect key="frame" x="10" y="154" width="355" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">The shabby naples joint of L’antica Pizzeria da Michele, open since 1906, is much 
+hyped as ‘the best pizza in the world’. Fanning the flames of that rep was the 2010 
+film ‘Eat Pray Love’, where Julia Roberts sits all blissed out, declaring she’s ‘having a 
+relationship’ with her pizza.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="M5E-XJ-LP9">
+                                <rect key="frame" x="16" y="354" width="343" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="Tqu-Nh-qwm" id="ck8-ZR-tGb"/>
+                                </connections>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Curiosity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFe-G0-dL3">
+                                <rect key="frame" x="16" y="116" width="355" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BerkshireSwash-Regular" family="Berkshire Swash" pointSize="24"/>
                                 <color key="textColor" red="0.50588235290000005" green="0.8980392157" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="a9Q-xg-757">
-                                <rect key="frame" x="168" y="315" width="39" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="pageIndicatorTintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </pageControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6dg-XQ-u3f">
-                                <rect key="frame" x="5" y="435" width="365" height="185"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r45-yO-3fC">
-                                    <size key="itemSize" width="118" height="154"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="scrollableAxes" translatesAutoresizingMaskIntoConstraints="NO" id="8CO-8M-6KI">
-                                <rect key="frame" x="10" y="154" width="355" height="153"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="BwB-SG-LGr"/>
                     </view>
                     <navigationItem key="navigationItem" title="Food" id="Vdx-2U-GMT"/>
+                    <connections>
+                        <outlet property="mapView" destination="M5E-XJ-LP9" id="8S8-ic-nuj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qsU-ct-bd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2975" y="-9"/>
+            <point key="canvasLocation" x="2973.5999999999999" y="-9.4452773613193415"/>
         </scene>
     </scenes>
     <resources>
@@ -616,6 +620,7 @@ in the City</string>
         <image name="cultureBg" width="1000" height="664"/>
         <image name="foto" width="4211" height="2368"/>
         <image name="housingbtn" width="410.39999389648438" height="160.19999694824219"/>
+        <image name="micheleBg" width="1372" height="772"/>
         <image name="naples" width="1920" height="1280"/>
         <image name="pizza-14-13" width="1000" height="667"/>
         <image name="transportbtn" width="532.5" height="333"/>
