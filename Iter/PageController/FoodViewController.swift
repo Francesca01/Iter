@@ -13,9 +13,9 @@ class FoodViewController: UIViewController, UIScrollViewDelegate,UICollectionVie
     
     @IBOutlet weak var PageControl: UIPageControl!
     @IBOutlet weak var ScrollView: UIScrollView!
-    var Object1=Places(Img: UIImage(named: "michele.jpeg"), Title: "Da Michele", Distance: 5)
-    var Object2=Places(Img: UIImage(named: "genovesi.jpg"), Title: "Genovesi", Distance: 10)
-    var Object3=Places(Img: UIImage(named: "Sorbillo.jpg"), Title: "Sorbillo", Distance: 15)
+    var Object1=Places(Img: UIImage(named: "michele.jpeg"), Title: "Da Michele", Distance: 5,Info:"The shabby naples joint of L’antica Pizzeria da Michele, open since 1906, is muchhyped as the best pizza in the world. Fanning the flames of that rep was the 2010 film Eat Pray Love, where Julia Roberts sits all blissed out, declaring shes having a relationship with her pizza.")
+    var Object2=Places(Img: UIImage(named: "genovesi.jpg"), Title: "Genovesi", Distance: 10, Info: "The pizzeria of Gaetano Genovesi derives its traditional origins from its own family. Antonio Genovesi, has starded the activity of pizza and was much appreciated by the Neapolitans and beyond. Antonio, was one of the first in Naples to make Neapolitan pizza known in the eastern countries especially in Japan in 1969, where he won awards and exported the Neapolitan culinary tradition.")
+    var Object3=Places(Img: UIImage(named: "Sorbillo.jpg"), Title: "Sorbillo", Distance: 15, Info: <#String#>)
        var Object4=Places(Img: UIImage(named: "nennella.jpg"), Title: "Nennella", Distance: 20)
     var ArrayPlaces=[Places]()
 

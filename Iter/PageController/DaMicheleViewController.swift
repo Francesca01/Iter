@@ -20,6 +20,7 @@ class DaMicheleViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title=places?.Title
+        PhotoPlaces.image=places?.Img
         mapView.showsUserLocation = true
         
         if CLLocationManager.locationServicesEnabled() {

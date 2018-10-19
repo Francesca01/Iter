@@ -12,10 +12,12 @@ class Places: NSObject {
     var Img:UIImage!
     var Title:String!
     var Distance:Float!
-    init(Img:UIImage!,Title:String!,Distance:Float!) {
+    var Info:String!
+    init(Img:UIImage!,Title:String!,Distance:Float!,Info:String) {
         self.Img=Img
         self.Title=Title
         self.Distance=Distance
+        self.Info=Info
     }
     
 
