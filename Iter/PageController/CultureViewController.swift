@@ -13,10 +13,10 @@ class CultureViewController: UIViewController, UIScrollViewDelegate,UICollection
     @IBOutlet weak var ScrollView: UIScrollView!
     @IBOutlet weak var PageControl: UIPageControl!
     
-    var Object1=Places(Img: UIImage(named: "piazzaPleb.jpeg"), Title: "Piazza del Plebiscito", Distance: 5)
-    var Object2=Places(Img: UIImage(named: "palazzoReale.jpg"), Title: "Palazzo Reale", Distance: 10)
-    var Object3=Places(Img: UIImage(named: "chiesaGesu.jpg"), Title: "Chiesa del Gesù Nuovo", Distance: 15)
-    var Object4=Places(Img: UIImage(named: "museoCapodimonte.jpg"), Title: "Museo di Capodimonte", Distance: 20)
+    var Object1=Places(Img: UIImage(named: "piazzaPleb.jpeg"), Title: "Piazza del Plebiscito", Distance: 5, Info: "A")
+    var Object2=Places(Img: UIImage(named: "palazzoReale.jpg"), Title: "Palazzo Reale", Distance: 10, Info: "a")
+    var Object3=Places(Img: UIImage(named: "chiesaGesu.jpg"), Title: "Chiesa del Gesù Nuovo", Distance: 15, Info: "A")
+    var Object4=Places(Img: UIImage(named: "museoCapodimonte.jpg"), Title: "Museo di Capodimonte", Distance: 20, Info: "a")
     var arrayPlaces=[Places]()
     
     var texts: [String] = ["Hi traveler, welcome to Naples. To know everything you can do or you can not, please swipe left. You will receive some tips to better integrate yourself in the local culture of this magnificent city.", "Place2", "Place3", "Place4"]

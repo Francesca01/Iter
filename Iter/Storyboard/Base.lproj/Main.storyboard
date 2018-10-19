@@ -601,17 +601,6 @@ in the City</string>
                                 <color key="backgroundColor" red="0.52577728430000004" green="0.0" blue="0.034402551509999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iYc-Xq-X5E">
-                                <rect key="frame" x="10" y="154" width="355" height="153"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">The shabby naples joint of L’antica Pizzeria da Michele, open since 1906, is much 
-hyped as ‘the best pizza in the world’. Fanning the flames of that rep was the 2010 
-film ‘Eat Pray Love’, where Julia Roberts sits all blissed out, declaring she’s ‘having a 
-relationship’ with her pizza.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="M5E-XJ-LP9">
                                 <rect key="frame" x="16" y="482" width="343" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -625,14 +614,7 @@ relationship’ with her pizza.</string>
                                     <outlet property="delegate" destination="Tqu-Nh-qwm" id="ck8-ZR-tGb"/>
                                 </connections>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Curiosity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFe-G0-dL3">
-                                <rect key="frame" x="16" y="116" width="355" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BerkshireSwash-Regular" family="Berkshire Swash" pointSize="24"/>
-                                <color key="textColor" red="0.08494054526" green="0.25105339290000001" blue="0.44316032529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fam-Te-kbq">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fam-Te-kbq">
                                 <rect key="frame" x="16" y="301" width="343" height="173"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -642,12 +624,31 @@ relationship’ with her pizza.</string>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iYc-Xq-X5E">
+                                <rect key="frame" x="7" y="120" width="355" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">The shabby naples joint of L’antica Pizzeria da Michele, open since 1906, is much 
+hyped as ‘the best pizza in the world’. Fanning the flames of that rep was the 2010 
+film ‘Eat Pray Love’, where Julia Roberts sits all blissed out, declaring she’s ‘having a 
+relationship’ with her pizza.</string>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Curiosity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFe-G0-dL3">
+                                <rect key="frame" x="12" y="82" width="355" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BerkshireSwash-Regular" family="Berkshire Swash" pointSize="24"/>
+                                <color key="textColor" red="0.08494054526" green="0.25105339290000001" blue="0.44316032529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="BwB-SG-LGr"/>
                     </view>
                     <navigationItem key="navigationItem" title="Food" id="Vdx-2U-GMT"/>
                     <connections>
+                        <outlet property="InfoLbl" destination="iYc-Xq-X5E" id="W24-AM-ogD"/>
                         <outlet property="PhotoPlaces" destination="Fam-Te-kbq" id="twn-IL-Zvh"/>
                         <outlet property="mapView" destination="M5E-XJ-LP9" id="8S8-ic-nuj"/>
                     </connections>

@@ -15,12 +15,14 @@ class DaMicheleViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var PhotoPlaces: UIImageView!
+    @IBOutlet weak var InfoLbl: UITextView!
     var locationManager = CLLocationManager()
     var places:Places?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title=places?.Title
         PhotoPlaces.image=places?.Img
+        InfoLbl.text=places?.Info
         mapView.showsUserLocation = true
         
         if CLLocationManager.locationServicesEnabled() {
