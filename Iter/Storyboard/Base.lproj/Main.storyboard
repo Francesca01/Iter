@@ -451,6 +451,7 @@
                     <connections>
                         <outlet property="PageControl" destination="jWf-mQ-uyf" id="7m5-pu-yg1"/>
                         <outlet property="ScrollView" destination="WlK-da-chG" id="Rqm-zY-4NC"/>
+                        <segue destination="Tqu-Nh-qwm" kind="show" identifier="ShowPlaces" id="Y4a-1P-TzC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ref-QB-nMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -543,10 +544,6 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDJ-ud-W8w">
-                                                    <rect key="frame" x="4" y="0.0" width="111" height="154"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </button>
                                             </subviews>
                                         </view>
                                         <connections>

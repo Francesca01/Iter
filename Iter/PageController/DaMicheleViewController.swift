@@ -11,12 +11,14 @@ import MapKit
 import CoreLocation
 
 class DaMicheleViewController: UIViewController, CLLocationManagerDelegate {
+ 
 
     @IBOutlet weak var mapView: MKMapView!
     var locationManager = CLLocationManager()
-
+    var places:Places?
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title=places?.Title
         mapView.showsUserLocation = true
         
         if CLLocationManager.locationServicesEnabled() {

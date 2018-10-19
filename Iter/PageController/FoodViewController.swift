@@ -107,8 +107,18 @@ class FoodViewController: UIViewController, UIScrollViewDelegate,UICollectionVie
         cells.DescCard.text=String(ArrayPlaces[indexPath.item].Distance)+"KM"
         return cells
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let places=ArrayPlaces[indexPath.row]
+        performSegue(withIdentifier: "ShowPlaces", sender: places)
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier=="ShowPlaces"
+        {
+            let destVC = segue.destination as! DaMicheleViewController
+            destVC.places=sender as? Places
+        }
+    }
     /*
     // MARK: - Navigation
 
