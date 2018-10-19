@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C6FF1F09677739B8E3048F9 /* Pods_Iter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E687D8AC5EFB98425CC573 /* Pods_Iter.framework */; };
 		1D3D7DC3217903AF009D0F0E /* CultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D7DC2217903AF009D0F0E /* CultureViewController.swift */; };
 		1D3D7DC521791223009D0F0E /* DaMicheleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D7DC421791223009D0F0E /* DaMicheleViewController.swift */; };
 		1DA5911B2174C18400288E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5911A2174C18400288E9E /* AppDelegate.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0937FE5EFE6A8E93F00B6623 /* Pods-Iter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Iter/Pods-Iter.debug.xcconfig"; sourceTree = "<group>"; };
 		1D3D7DC2217903AF009D0F0E /* CultureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureViewController.swift; sourceTree = "<group>"; };
 		1D3D7DC421791223009D0F0E /* DaMicheleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaMicheleViewController.swift; sourceTree = "<group>"; };
 		1DA591172174C18400288E9E /* Iter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +44,8 @@
 		1DA591212174C18500288E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DA591242174C18500288E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DA591262174C18500288E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F8F2E2B61B8FF676F3FA76C /* Pods-Iter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Iter/Pods-Iter.release.xcconfig"; sourceTree = "<group>"; };
+		90E687D8AC5EFB98425CC573 /* Pods_Iter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Iter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FE5BE32177BAF80075D38D /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		FF157EFE2177661F00A34A8B /* GeneralCityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCityController.swift; sourceTree = "<group>"; };
 		FF157F01217768A200A34A8B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C6FF1F09677739B8E3048F9 /* Pods_Iter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				1DA591192174C18400288E9E /* Iter */,
+				A4032498ACCC161DCD7DCC4A /* Pods */,
+				F03DB611C804D96A1C3862F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +113,15 @@
 				B876313C2179373C00CFAB1F /* OtherClasses */,
 			);
 			path = Iter;
+			sourceTree = "<group>";
+		};
+		A4032498ACCC161DCD7DCC4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0937FE5EFE6A8E93F00B6623 /* Pods-Iter.debug.xcconfig */,
+				5F8F2E2B61B8FF676F3FA76C /* Pods-Iter.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		B876313A217936BF00CFAB1F /* Storyboard */ = {
@@ -138,6 +154,14 @@
 				FF437ED82178D2230065AEC0 /* CustomCells.swift */,
 			);
 			path = OtherClasses;
+			sourceTree = "<group>";
+		};
+		F03DB611C804D96A1C3862F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90E687D8AC5EFB98425CC573 /* Pods_Iter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FF157EFD2177638100A34A8B /* Cells */ = {
@@ -204,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DA591292174C18500288E9E /* Build configuration list for PBXNativeTarget "Iter" */;
 			buildPhases = (
+				A7854859275D03B8869CB334 /* [CP] Check Pods Manifest.lock */,
 				1DA591132174C18400288E9E /* Sources */,
 				1DA591142174C18400288E9E /* Frameworks */,
 				1DA591152174C18400288E9E /* Resources */,
+				79617F6C821E9CEE902EEC38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,6 +297,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79617F6C821E9CEE902EEC38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Iter/Pods-Iter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FaveButton/FaveButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FaveButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Iter/Pods-Iter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7854859275D03B8869CB334 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Iter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1DA591132174C18400288E9E /* Sources */ = {
@@ -431,6 +504,7 @@
 		};
 		1DA5912A2174C18500288E9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0937FE5EFE6A8E93F00B6623 /* Pods-Iter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +522,7 @@
 		};
 		1DA5912B2174C18500288E9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F8F2E2B61B8FF676F3FA76C /* Pods-Iter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

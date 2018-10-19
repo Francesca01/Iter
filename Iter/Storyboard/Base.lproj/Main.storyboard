@@ -110,7 +110,7 @@
             </objects>
             <point key="canvasLocation" x="608.79999999999995" y="-9.4452773613193415"/>
         </scene>
-        <!--Naples-->
+        <!--Delegate-->
         <scene sceneID="C43-c7-T04">
             <objects>
                 <viewController modalTransitionStyle="flipHorizontal" id="JIR-EW-l45" customClass="GeneralCityController" customModule="Iter" customModuleProvider="target" sceneMemberID="viewController">
@@ -286,6 +286,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqP-hu-4CN" customClass="FaveButton" customModule="FaveButton">
+                                <rect key="frame" x="329" y="85" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="heart"/>
+                                <connections>
+                                    <outlet property="delegate" destination="JIR-EW-l45" id="aXG-R4-5y8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -302,6 +310,7 @@
                     <connections>
                         <outlet property="PageControl" destination="pwD-Em-01f" id="YfX-GQ-Ook"/>
                         <outlet property="ScrollView" destination="FCt-3p-PCI" id="Fpm-ET-wwF"/>
+                        <outlet property="heartButton" destination="eqP-hu-4CN" id="vTr-yB-nv5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSk-gJ-vkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -656,6 +665,7 @@ relationship’ with her pizza.</string>
         <image name="bg.jpg" width="1600" height="900"/>
         <image name="cultureBg" width="1000" height="664"/>
         <image name="foto" width="4211" height="2368"/>
+        <image name="heart" width="128" height="128"/>
         <image name="housingbtn" width="410.39999389648438" height="160.19999694824219"/>
         <image name="micheleBg" width="1372" height="772"/>
         <image name="naples" width="1920" height="1280"/>
