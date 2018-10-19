@@ -67,14 +67,16 @@ class FoodViewController: UIViewController, UIScrollViewDelegate,UICollectionVie
             
             //changing the property text font
             
-            ScrollView.backgroundColor = UIColor.black.withAlphaComponent(0.3)
-            
-            textView.backgroundColor = UIColor.clear
+//            ScrollView.backgroundColor = UIColor.black.withAlphaComponent(0.3)
+//
+//            textView.backgroundColor = UIColor.clear
+            textView.backgroundColor=UIColor.clear
+            ScrollView.backgroundColor=UIColor.clear
             textView.isEditable = false
             
-            textView.font = UIFont(name: "Helvetica", size: 12)
-            textView.textColor = UIColor.white
-            textView.textAlignment = .justified
+            textView.font = UIFont(name: "Helvetica", size:20)
+            textView.textColor = UIColor.black
+            //textView.textAlignment = .justified
             //textView.contentInset = UIEdgeInsets.init(top: 10, left: 5,bottom: 5,right: 10)
             
             //textView.tintColor = UIColor.black

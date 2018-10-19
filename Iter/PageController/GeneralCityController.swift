@@ -48,6 +48,7 @@ class GeneralCityController: UIViewController, UIScrollViewDelegate{
             textView.text = texts[i]
             self.ScrollView.addSubview (textView)
             textView.backgroundColor=UIColor.clear
+            textView.font=UIFont(name: "Helvetica", size: 20)
             textView.isEditable = false
             
         }

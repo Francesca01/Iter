@@ -118,8 +118,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="720" verticalCompressionResistancePriority="720" image="NaplesBg" translatesAutoresizingMaskIntoConstraints="NO" id="he6-un-MoM">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="720" verticalCompressionResistancePriority="720" fixedFrame="YES" image="NaplesBg" translatesAutoresizingMaskIntoConstraints="NO" id="he6-un-MoM">
+                                <rect key="frame" x="-104" y="0.0" width="521" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Naples" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBN-On-OOm">
                                 <rect key="frame" x="16" y="85" width="355" height="30"/>
@@ -296,14 +297,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="dOH-Ec-F1g" firstAttribute="trailing" secondItem="he6-un-MoM" secondAttribute="trailing" id="5T7-13-AIk"/>
-                            <constraint firstItem="he6-un-MoM" firstAttribute="leading" secondItem="dOH-Ec-F1g" secondAttribute="leading" id="B1G-wp-mmg"/>
-                            <constraint firstItem="dOH-Ec-F1g" firstAttribute="bottom" secondItem="he6-un-MoM" secondAttribute="bottom" id="S2n-m6-0lV"/>
-                            <constraint firstItem="he6-un-MoM" firstAttribute="top" secondItem="TU8-R7-Kt6" secondAttribute="top" id="bHt-jJ-Gbd"/>
-                            <constraint firstItem="dOH-Ec-F1g" firstAttribute="trailing" secondItem="he6-un-MoM" secondAttribute="trailing" id="u0B-Am-yle"/>
-                            <constraint firstItem="he6-un-MoM" firstAttribute="leading" secondItem="dOH-Ec-F1g" secondAttribute="leading" id="xCi-5v-4UE"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dOH-Ec-F1g"/>
                     </view>
                     <navigationItem key="navigationItem" title="Naples" largeTitleDisplayMode="always" id="SgA-TH-d6J"/>
@@ -626,7 +619,7 @@ relationship’ with her pizza.</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="M5E-XJ-LP9">
-                                <rect key="frame" x="16" y="354" width="343" height="293"/>
+                                <rect key="frame" x="16" y="482" width="343" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -645,6 +638,10 @@ relationship’ with her pizza.</string>
                                 <color key="textColor" red="0.50588235290000005" green="0.8980392157" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fam-Te-kbq">
+                                <rect key="frame" x="16" y="301" width="343" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="BwB-SG-LGr"/>
