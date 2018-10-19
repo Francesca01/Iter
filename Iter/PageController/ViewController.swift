@@ -103,14 +103,14 @@ extension ViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchCity = ArrayCity.compactMap{ $0 }.filter({$0.City.lowercased().prefix(searchText.count) == searchText.lowercased()})
-        
-            
-//        searchCountry = countryNameArr.filter({$0.lowercased().prefix(searchText.count) == searchText.lowercased()})
-        
-//        filteredArray = countryAndPortsArray.flatMap{ $0 }.filter{$0.country?.lowercased().range(of: searchKey) != nil }
-//
-        
+
         searching = true
+        tblView.reloadData()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searching = false
+        searchBar.text = ""
         tblView.reloadData()
     }
     
