@@ -14,6 +14,7 @@ class DaMicheleViewController: UIViewController, CLLocationManagerDelegate {
  
 
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var PhotoPlaces: UIImageView!
     var locationManager = CLLocationManager()
     var places:Places?
     override func viewDidLoad() {

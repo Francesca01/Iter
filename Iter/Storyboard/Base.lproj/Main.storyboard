@@ -410,10 +410,6 @@
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syR-bO-nUN">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="154"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                </button>
                                                             </subviews>
                                                         </view>
                                                         <connections>
@@ -646,6 +642,7 @@ relationship’ with her pizza.</string>
                     </view>
                     <navigationItem key="navigationItem" title="Food" id="Vdx-2U-GMT"/>
                     <connections>
+                        <outlet property="PhotoPlaces" destination="Fam-Te-kbq" id="twn-IL-Zvh"/>
                         <outlet property="mapView" destination="M5E-XJ-LP9" id="8S8-ic-nuj"/>
                     </connections>
                 </viewController>
