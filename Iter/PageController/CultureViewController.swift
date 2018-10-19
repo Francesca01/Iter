@@ -58,6 +58,7 @@ class CultureViewController: UIViewController, UIScrollViewDelegate,UICollection
             frame.size = ScrollView.frame.size
             let textView = UITextView (frame: frame)
             textView.text = texts[i]
+            textView.font=UIFont(name: "Helvetica", size: 20)
             self.ScrollView.addSubview (textView)
             textView.backgroundColor=UIColor.clear
             ScrollView.backgroundColor=UIColor.clear
