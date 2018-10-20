@@ -108,11 +108,10 @@ extension ViewController: UISearchBarDelegate {
         tblView.reloadData()
     }
     
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searching = false
-        searchBar.text = ""
-        tblView.reloadData()
-    }
+//    func dismissKeyboard() {
+//        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+//        self.searchBar.endEditing(true)
+//    }
     
 }
 
