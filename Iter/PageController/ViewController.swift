@@ -80,7 +80,6 @@ class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSou
 //        navigationController?.setNavigationBarHidden(true, animated: false)
 //    }
     
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,6 +95,10 @@ class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSou
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
+    }
 }
 
 
@@ -108,11 +111,10 @@ extension ViewController: UISearchBarDelegate {
         tblView.reloadData()
     }
     
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searching = false
-        searchBar.text = ""
-        tblView.reloadData()
-    }
+//    func dismissKeyboard() {
+//        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+//        self.searchBar.endEditing(true)
+//    }
     
 }
 

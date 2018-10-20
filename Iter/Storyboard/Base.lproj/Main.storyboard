@@ -60,7 +60,7 @@
                                     <segue destination="JIR-EW-l45" kind="show" id="kry-CZ-IVA"/>
                                 </connections>
                             </button>
-                            <searchBar contentMode="redraw" fixedFrame="YES" barStyle="black" searchBarStyle="minimal" placeholder="Find your City" showsCancelButton="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzr-ni-dMk">
+                            <searchBar contentMode="redraw" fixedFrame="YES" barStyle="black" searchBarStyle="minimal" placeholder="Find your City" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzr-ni-dMk">
                                 <rect key="frame" x="0.0" y="215" width="375" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.08494054526" green="0.25105339290000001" blue="0.44316032529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -120,7 +120,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="720" verticalCompressionResistancePriority="720" fixedFrame="YES" image="NaplesBg" translatesAutoresizingMaskIntoConstraints="NO" id="he6-un-MoM">
-                                <rect key="frame" x="-104" y="0.0" width="521" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="573" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Naples" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBN-On-OOm">
@@ -319,7 +319,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FoodBG" translatesAutoresizingMaskIntoConstraints="NO" id="Q4x-Nx-rJG">
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FoodBG" translatesAutoresizingMaskIntoConstraints="NO" id="Q4x-Nx-rJG">
                                 <rect key="frame" x="0.0" y="64" width="900" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.52577728426395942" green="0.0" blue="0.034402551511898409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -660,7 +660,7 @@ relationship’ with her pizza.</string>
     </scenes>
     <resources>
         <image name="FoodBG" width="900" height="600"/>
-        <image name="NaplesBg" width="622" height="350"/>
+        <image name="NaplesBg" width="931" height="700"/>
         <image name="bg.jpg" width="1600" height="900"/>
         <image name="cultureBg" width="1000" height="664"/>
         <image name="foto" width="4211" height="2368"/>
