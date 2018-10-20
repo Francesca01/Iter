@@ -80,7 +80,6 @@ class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSou
 //        navigationController?.setNavigationBarHidden(true, animated: false)
 //    }
     
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,6 +94,10 @@ class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSou
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
     }
 }
 
