@@ -50,7 +50,6 @@ class DaMicheleViewController: UIViewController, MKMapViewDelegate, CLLocationMa
              let destinationLocation = CLLocationCoordinate2D(latitude:38.643172 , longitude: -90.177429)
             
             let loc = locationManager.location
-            locationManager.startUpdatingLocation()
 
             let sourceLocation: CLLocationCoordinate2D = (loc?.coordinate ?? CLLocationCoordinate2D (latitude:39.173209 , longitude: -94.593933))
            
